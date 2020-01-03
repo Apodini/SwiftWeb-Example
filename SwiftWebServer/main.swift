@@ -7,6 +7,22 @@
 //
 
 import Foundation
+import SwiftWeb
+import Swifter
 
-print("Hello, World!")
+let server = HttpServer()
 
+server["/"] = { request in
+    return HttpResponse.ok(.text(SwiftWeb.render(view: ContentView())))
+}
+
+let semaphore = DispatchSemaphore(value: 0)
+
+do {
+  try server.start(8080)
+  print("listening on port \(try server.port())")
+  semaphore.wait()
+} catch {
+  print("error: \(error)")
+  semaphore.signal()
+}

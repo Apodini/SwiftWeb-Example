@@ -3,28 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		DBA3A21423BFE3D200962B66 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3A21323BFE3D200962B66 /* main.swift */; };
+		DBA3A21C23BFE3E700962B66 /* SwiftWeb in Frameworks */ = {isa = PBXBuildFile; productRef = DBA3A21B23BFE3E700962B66 /* SwiftWeb */; };
+		DBA3A21F23BFE7B800962B66 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = DBA3A21E23BFE7B800962B66 /* Swifter */; };
+		DBA3A22123BFE97200962B66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3A22023BFE97200962B66 /* ContentView.swift */; };
+		DBA3A22823BFEE3600962B66 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3A22223BFE9DB00962B66 /* TransactionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		DBA3A20E23BFE3D200962B66 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			buildActionMask = 12;
+			dstPath = "";
 			dstSubfolderSpec = 0;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DBA3A21023BFE3D200962B66 /* SwiftWebServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftWebServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA3A21323BFE3D200962B66 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DBA3A22023BFE97200962B66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DBA3A22223BFE9DB00962B66 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		DBA3A22723BFED9700962B66 /* SwiftWebServer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftWebServer.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA3A21C23BFE3E700962B66 /* SwiftWeb in Frameworks */,
+				DBA3A21F23BFE7B800962B66 /* Swifter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +52,7 @@
 			children = (
 				DBA3A21223BFE3D200962B66 /* SwiftWebServer */,
 				DBA3A21123BFE3D200962B66 /* Products */,
+				DBA3A21A23BFE3E700962B66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +67,19 @@
 		DBA3A21223BFE3D200962B66 /* SwiftWebServer */ = {
 			isa = PBXGroup;
 			children = (
+				DBA3A22723BFED9700962B66 /* SwiftWebServer.entitlements */,
 				DBA3A21323BFE3D200962B66 /* main.swift */,
+				DBA3A22023BFE97200962B66 /* ContentView.swift */,
+				DBA3A22223BFE9DB00962B66 /* TransactionView.swift */,
 			);
 			path = SwiftWebServer;
+			sourceTree = "<group>";
+		};
+		DBA3A21A23BFE3E700962B66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +98,10 @@
 			dependencies = (
 			);
 			name = SwiftWebServer;
+			packageProductDependencies = (
+				DBA3A21B23BFE3E700962B66 /* SwiftWeb */,
+				DBA3A21E23BFE7B800962B66 /* Swifter */,
+			);
 			productName = SwiftWebServer;
 			productReference = DBA3A21023BFE3D200962B66 /* SwiftWebServer */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +130,9 @@
 				Base,
 			);
 			mainGroup = DBA3A20723BFE3D200962B66;
+			packageReferences = (
+				DBA3A21D23BFE7B800962B66 /* XCRemoteSwiftPackageReference "swifter" */,
+			);
 			productRefGroup = DBA3A21123BFE3D200962B66 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -120,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA3A22123BFE97200962B66 /* ContentView.swift in Sources */,
 				DBA3A21423BFE3D200962B66 /* main.swift in Sources */,
+				DBA3A22823BFEE3600962B66 /* TransactionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +272,7 @@
 		DBA3A21823BFE3D200962B66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SwiftWebServer/SwiftWebServer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AUP6T9FX64;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -254,6 +284,7 @@
 		DBA3A21923BFE3D200962B66 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SwiftWebServer/SwiftWebServer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AUP6T9FX64;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -284,6 +315,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DBA3A21D23BFE7B800962B66 /* XCRemoteSwiftPackageReference "swifter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/httpswift/swifter.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DBA3A21B23BFE3E700962B66 /* SwiftWeb */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftWeb;
+		};
+		DBA3A21E23BFE7B800962B66 /* Swifter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBA3A21D23BFE7B800962B66 /* XCRemoteSwiftPackageReference "swifter" */;
+			productName = Swifter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DBA3A20823BFE3D200962B66 /* Project object */;
 }
