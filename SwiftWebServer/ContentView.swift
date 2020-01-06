@@ -10,6 +10,9 @@ import SwiftWeb
 
 struct ContentView: View {
     var body: View? {
-        TransactionView()
+        VStack {
+            TabBar()
+            Spacer()
+        }
     }
 }

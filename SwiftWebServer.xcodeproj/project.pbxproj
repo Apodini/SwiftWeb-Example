@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB7A0F6923C2270800CED5AD /* SwiftWebServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A0F6823C2270800CED5AD /* SwiftWebServer.swift */; };
 		DBA3A21423BFE3D200962B66 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3A21323BFE3D200962B66 /* main.swift */; };
 		DBA3A21C23BFE3E700962B66 /* SwiftWeb in Frameworks */ = {isa = PBXBuildFile; productRef = DBA3A21B23BFE3E700962B66 /* SwiftWeb */; };
 		DBA3A21F23BFE7B800962B66 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = DBA3A21E23BFE7B800962B66 /* Swifter */; };
@@ -27,11 +28,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DB7A0F6823C2270800CED5AD /* SwiftWebServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWebServer.swift; sourceTree = "<group>"; };
 		DBA3A21023BFE3D200962B66 /* SwiftWebServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftWebServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA3A21323BFE3D200962B66 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DBA3A22023BFE97200962B66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DBA3A22223BFE9DB00962B66 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
 		DBA3A22723BFED9700962B66 /* SwiftWebServer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftWebServer.entitlements; sourceTree = "<group>"; };
+		DBDB18EB23C2887C0099A9B0 /* list.dash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.dash.png; sourceTree = "<group>"; };
+		DBDB18EC23C2887C0099A9B0 /* rectangle.stack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rectangle.stack.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB7A0F6A23C227AF00CED5AD /* static */ = {
+			isa = PBXGroup;
+			children = (
+				DBDB18EB23C2887C0099A9B0 /* list.dash.png */,
+				DBDB18EC23C2887C0099A9B0 /* rectangle.stack.png */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
 		DBA3A20723BFE3D200962B66 = {
 			isa = PBXGroup;
 			children = (
@@ -67,10 +80,12 @@
 		DBA3A21223BFE3D200962B66 /* SwiftWebServer */ = {
 			isa = PBXGroup;
 			children = (
-				DBA3A22723BFED9700962B66 /* SwiftWebServer.entitlements */,
 				DBA3A21323BFE3D200962B66 /* main.swift */,
+				DB7A0F6823C2270800CED5AD /* SwiftWebServer.swift */,
 				DBA3A22023BFE97200962B66 /* ContentView.swift */,
 				DBA3A22223BFE9DB00962B66 /* TransactionView.swift */,
+				DB7A0F6A23C227AF00CED5AD /* static */,
+				DBA3A22723BFED9700962B66 /* SwiftWebServer.entitlements */,
 			);
 			path = SwiftWebServer;
 			sourceTree = "<group>";
@@ -148,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBA3A22123BFE97200962B66 /* ContentView.swift in Sources */,
+				DB7A0F6923C2270800CED5AD /* SwiftWebServer.swift in Sources */,
 				DBA3A21423BFE3D200962B66 /* main.swift in Sources */,
 				DBA3A22823BFEE3600962B66 /* TransactionView.swift in Sources */,
 			);
