@@ -36,6 +36,7 @@
 		DBA3A22723BFED9700962B66 /* SwiftWebServer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftWebServer.entitlements; sourceTree = "<group>"; };
 		DBDB18EB23C2887C0099A9B0 /* list.dash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.dash.png; sourceTree = "<group>"; };
 		DBDB18EC23C2887C0099A9B0 /* rectangle.stack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rectangle.stack.png; sourceTree = "<group>"; };
+		DBDB18ED23C389080099A9B0 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				DBDB18EB23C2887C0099A9B0 /* list.dash.png */,
+				DBDB18ED23C389080099A9B0 /* plus.png */,
 				DBDB18EC23C2887C0099A9B0 /* rectangle.stack.png */,
 			);
 			path = static;
