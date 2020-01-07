@@ -13,6 +13,7 @@
 		DBA3A21F23BFE7B800962B66 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = DBA3A21E23BFE7B800962B66 /* Swifter */; };
 		DBA3A22123BFE97200962B66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3A22023BFE97200962B66 /* ContentView.swift */; };
 		DBA3A22823BFEE3600962B66 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3A22223BFE9DB00962B66 /* TransactionView.swift */; };
+		DBF7BCC423C4E8FD0068B3CA /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7BCC323C4E8FD0068B3CA /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,7 @@
 		DBDB18EB23C2887C0099A9B0 /* list.dash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.dash.png; sourceTree = "<group>"; };
 		DBDB18EC23C2887C0099A9B0 /* rectangle.stack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rectangle.stack.png; sourceTree = "<group>"; };
 		DBDB18ED23C389080099A9B0 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		DBF7BCC323C4E8FD0068B3CA /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				DBA3A21323BFE3D200962B66 /* main.swift */,
 				DB7A0F6823C2270800CED5AD /* SwiftWebServer.swift */,
 				DBA3A22023BFE97200962B66 /* ContentView.swift */,
+				DBF7BCC323C4E8FD0068B3CA /* TabBar.swift */,
 				DBA3A22223BFE9DB00962B66 /* TransactionView.swift */,
 				DB7A0F6A23C227AF00CED5AD /* static */,
 				DBA3A22723BFED9700962B66 /* SwiftWebServer.entitlements */,
@@ -168,6 +171,7 @@
 				DB7A0F6923C2270800CED5AD /* SwiftWebServer.swift in Sources */,
 				DBA3A21423BFE3D200962B66 /* main.swift in Sources */,
 				DBA3A22823BFEE3600962B66 /* TransactionView.swift in Sources */,
+				DBF7BCC423C4E8FD0068B3CA /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
