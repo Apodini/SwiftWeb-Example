@@ -9,24 +9,12 @@
 import SwiftWeb
 
 struct ContentView: View {
+    
     var body: View? {
-        VStack(spacing: 20, alignment: .stretch) {
-            TabBar()
-
-            VStack {
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("Transactions").font(.system(size: 35, weight: .bold))
-                        Color.clear
-                    }.frame(width: 698)
-                    
-                    Image(name: "plus.png")
-                        .resizable()
-                        .frame(width: 21, height: 23)
-                }
-
-                Spacer()
-            }
-        }
+        TransactionView()
+//        ZStack {
+//            TransactionView()
+//            Sheet()
+//        }
     }
 }
