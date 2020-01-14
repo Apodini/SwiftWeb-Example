@@ -7,18 +7,16 @@
 //
 
 import Foundation
-
-import Foundation
 import SwiftWeb
 
 public struct Sheet: View {
-    public var body: View? {
+    public var body: some View {
         VStack {
             Spacer()
             Color(red:0.95, green:0.95, blue:0.97, alpha:1.0)
-                .frame(width: 300, height: 300)
+                .frame(width: 300.0, height: 300.0)
                 .cornerRadius(10.0)
-                .shadow(color: Color(white: 0.0).opacity(0.25), radius: 129, x: 0, y: 2)
+                .shadow(color: Color(white: 0.0).opacity(0.25), radius: 129.0, x: 0.0, y: 2.0)
             Spacer()
         }
             .background(Color(white: 0.0).opacity(0.14))

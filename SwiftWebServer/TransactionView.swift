@@ -6,33 +6,34 @@
 //  Copyright © 2020 Quirin Schweigert. All rights reserved.
 //
 
+import Foundation
 import SwiftWeb
 
 struct TransactionView: View {
     let listItems = ["Transaction 1", "Transaction 2", "Transaction 3", "Transaction 4"]
-    
-    var body: View? {
-        VStack(spacing: 20, alignment: .stretch) {
+
+    var body: some View {
+        VStack(alignment: HorizontalAlignment.stretch, spacing: 20) {
             TabBar()
 
             VStack {
-                VStack(spacing: 20, alignment: .stretch) {
+                VStack(alignment: .stretch, spacing: 20) {
                     HStack {
-                        VStack(alignment: .leading) {
+                        VStack(alignment: .stretch) {
                             NavigationBarTitle("Transactions")
                             Color.clear
                         }
-                        
+
                         Spacer()
-                        
+
                         Image(name: "plus.png")
                             .resizable()
                             .frame(width: 21, height: 23)
                     }
                     .frame(width: 698)
-                    
+
                     List(listItems) { item in
-                        VStack(spacing: 2.0, alignment: .leading) {
+                        VStack(alignment: .leading, spacing: 2.0) {
                             Text(item)
                                 .font(.system(size: 20, weight: .bold))
                             Text("November 1, 2019 at 1:37 PM")
@@ -41,8 +42,6 @@ struct TransactionView: View {
                         }.frame(height: 60)
                     }
                 }
-
-                Spacer()
             }
         }
     }
