@@ -20,10 +20,24 @@ class SwiftWebServer {
     init() {
         server = HttpServer()
         
+        let view: some View = {
+            HStack {
+                NavigationBarTitle("Transactions")
+                
+                Spacer()
+
+                Image("plus.png")
+                    .resizable()
+                    .frame(width: 21, height: 23)
+            }
+        }()
+        
+        print(view.html(inLayoutAxis: .vertical).render())
+
         server["/"] = { request in
-            print(request.path)
+            let contentView = ContentView()
             
-            return HttpResponse.ok(.text(SwiftWeb.render(view: ContentView())))
+            return HttpResponse.ok(.text(SwiftWeb.render(view: contentView)))
         }
 
         server["/:path"] = { request in
@@ -55,9 +69,6 @@ class SwiftWebServer {
         }
         
         let ressourcePath = staticFilesPath.appending(name)
-        
-        print("ressource path: \(ressourcePath)")
-        
         return try? NSData(contentsOfFile: ressourcePath) as Data
     }
     

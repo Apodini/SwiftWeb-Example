@@ -13,20 +13,17 @@ struct TransactionView: View {
     let listItems = ["Transaction 1", "Transaction 2", "Transaction 3", "Transaction 4"]
 
     var body: some View {
-        VStack(alignment: HorizontalAlignment.stretch, spacing: 20) {
+        VStack(spacing: 20) {
             TabBar()
 
             VStack {
-                VStack(alignment: .stretch, spacing: 20) {
+                VStack(spacing: 20) {
                     HStack {
-                        VStack(alignment: .stretch) {
-                            NavigationBarTitle("Transactions")
-                            Color.clear
-                        }
-
+                        NavigationBarTitle("Transactions")
+                        
                         Spacer()
 
-                        Image(name: "plus.png")
+                        Image("plus.png")
                             .resizable()
                             .frame(width: 21, height: 23)
                     }
@@ -34,13 +31,17 @@ struct TransactionView: View {
 
                     List(listItems) { item in
                         VStack(alignment: .leading, spacing: 2.0) {
+                            Spacer()
                             Text(item)
                                 .font(.system(size: 20, weight: .bold))
                             Text("November 1, 2019 at 1:37 PM")
                                 .font(.system(size: 14, weight: .regular))
                                 .foregroundColor(Color(white: 0.55))
-                        }.frame(height: 60)
+                            Spacer()
+                        }
+                            .frame(height: 60)
                     }
+                        .frame(width: 698)
                 }
             }
         }

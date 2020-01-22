@@ -11,31 +11,30 @@ import SwiftWeb
 struct ContentView: View {
     
     var body: some View {
-//        TransactionView()
+        TransactionView()
         
 //        ZStack {
 //            TransactionView()
 //            Sheet()
 //        }
         
-        HStack {
-            VStack {
-                Text("Hello, World!")
-                Spacer()
-                    .padding()
-                    .border(Color.red)
-                    .padding()
-                    .border(Color.blue)
-                
-                HStack {
-                    VStack {
-                        Spacer()
-                    }
-                        .padding()
-                        .border(Color.green)
-                }
-            }
-            .border(Color.gray)
-        }
+        
+//        HStack {
+//            VStack {
+//                Text("Hello, World!")
+//                Spacer()
+//                    .padding()
+//                    .border(Color.red)
+//                    .padding()
+//                    .border(Color.blue)
+//
+//                HStack {
+//                    Spacer()
+//                        .padding()
+//                        .border(Color.green)
+//                }
+//            }
+//            .border(Color.gray)
+//        }
     }
 }
