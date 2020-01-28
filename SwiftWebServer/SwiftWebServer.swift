@@ -19,20 +19,6 @@ class SwiftWebServer {
 
     init() {
         server = HttpServer()
-        
-        let view: some View = {
-            HStack {
-                NavigationBarTitle("Transactions")
-                
-                Spacer()
-
-                Image("plus.png")
-                    .resizable()
-                    .frame(width: 21, height: 23)
-            }
-        }()
-        
-        print(view.html(inLayoutAxis: .vertical).render())
 
         server["/"] = { request in
             let contentView = ContentView()

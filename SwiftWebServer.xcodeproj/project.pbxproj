@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A03EDCEB23E06AF60015FD14 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03EDCEA23E06AF60015FD14 /* Form.swift */; };
+		A03EDCED23E097740015FD14 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03EDCEC23E097740015FD14 /* Section.swift */; };
 		DB7A0F6923C2270800CED5AD /* SwiftWebServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A0F6823C2270800CED5AD /* SwiftWebServer.swift */; };
 		DBA3A21423BFE3D200962B66 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3A21323BFE3D200962B66 /* main.swift */; };
 		DBA3A21C23BFE3E700962B66 /* SwiftWeb in Frameworks */ = {isa = PBXBuildFile; productRef = DBA3A21B23BFE3E700962B66 /* SwiftWeb */; };
@@ -30,6 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A03EDCEA23E06AF60015FD14 /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
+		A03EDCEC23E097740015FD14 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		DB7A0F6823C2270800CED5AD /* SwiftWebServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWebServer.swift; sourceTree = "<group>"; };
 		DBA3A21023BFE3D200962B66 /* SwiftWebServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftWebServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA3A21323BFE3D200962B66 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 				DBA3A22223BFE9DB00962B66 /* TransactionView.swift */,
 				DBF7BCC323C4E8FD0068B3CA /* TabBar.swift */,
 				DBF7BCC723C4EF720068B3CA /* Sheet.swift */,
+				A03EDCEA23E06AF60015FD14 /* Form.swift */,
+				A03EDCEC23E097740015FD14 /* Section.swift */,
 				DB7A0F6A23C227AF00CED5AD /* static */,
 				DBA3A22723BFED9700962B66 /* SwiftWebServer.entitlements */,
 			);
@@ -175,6 +181,8 @@
 				DBA3A21423BFE3D200962B66 /* main.swift in Sources */,
 				DBF7BCC823C4EF720068B3CA /* Sheet.swift in Sources */,
 				DBA3A22823BFEE3600962B66 /* TransactionView.swift in Sources */,
+				A03EDCED23E097740015FD14 /* Section.swift in Sources */,
+				A03EDCEB23E06AF60015FD14 /* Form.swift in Sources */,
 				DBF7BCC423C4E8FD0068B3CA /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
