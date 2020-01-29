@@ -19,6 +19,7 @@ struct Form<Content>: View where Content: View {
         VStack {
             content
         }
+            .padding(.bottom, 20)
             .background(Color(red:0.95, green:0.95, blue:0.97, alpha:1.0))
     }
 }

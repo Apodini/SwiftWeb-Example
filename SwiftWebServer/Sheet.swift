@@ -52,10 +52,51 @@ public struct Sheet: View {
                             }
                             .background(Color(white: 0.93))
                             .cornerRadius(8)
+                        }.frame(height: 44)
+                    }
+                    
+                    Section(header: Text("Description")) {
+                        HStack {
+                            Text("Latest Heist")
+                                .font(.system(size: 18))
+                            
+                            Spacer()
+                        }.frame(height: 44)
+                    }
+                    
+                    Section(header: Text("Account")) {
+                        VStack {
+                            HStack {
+                                Text("Safe")
+                                    .font(.system(size: 18))
+                                
+                                Spacer()
+                            }.frame(height: 44)
+                            
+                            Color(white: 0.83).frame(height: 0.5)
+                            
+                            HStack {
+                                Text("Under my Pillow")
+                                    .font(.system(size: 18))
+                                
+                                Spacer()
+                                Image("checkmark.png").resizable().frame(width: 17, height: 17)
+                            }.frame(height: 44)
                         }
                     }
                     
-                    Spacer()
+                    Section(header: Text("Date")) {
+                        HStack {
+                            Text("Date")
+                                .font(.system(size: 18))
+                            
+                            Spacer()
+                            
+                            Text("11/1/19, 13:37 PM")
+                                .font(.system(size: 18))
+                                .foregroundColor(Color(red:0.54, green:0.54, blue:0.56))
+                        }.frame(height: 44)
+                    }
                 }
             }
             .frame(width: 618.0)

@@ -31,7 +31,6 @@ struct Section<Parent, Content>: View where Parent: View, Content: View {
             
             content
                 .padding(.horizontal, 31)
-                .frame(height: 44)
                 .background(Color(white: 1.0))
             
             Color(white: 0.83)

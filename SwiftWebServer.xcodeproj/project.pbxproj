@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A03EDCEB23E06AF60015FD14 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03EDCEA23E06AF60015FD14 /* Form.swift */; };
 		A03EDCED23E097740015FD14 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03EDCEC23E097740015FD14 /* Section.swift */; };
+		A03EDCEF23E19BF00015FD14 /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03EDCEE23E19BF00015FD14 /* Picker.swift */; };
 		DB7A0F6923C2270800CED5AD /* SwiftWebServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A0F6823C2270800CED5AD /* SwiftWebServer.swift */; };
 		DBA3A21423BFE3D200962B66 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3A21323BFE3D200962B66 /* main.swift */; };
 		DBA3A21C23BFE3E700962B66 /* SwiftWeb in Frameworks */ = {isa = PBXBuildFile; productRef = DBA3A21B23BFE3E700962B66 /* SwiftWeb */; };
@@ -34,6 +35,8 @@
 /* Begin PBXFileReference section */
 		A03EDCEA23E06AF60015FD14 /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 		A03EDCEC23E097740015FD14 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		A03EDCEE23E19BF00015FD14 /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
+		A03EDCF023E1B63C0015FD14 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
 		DB7A0F6823C2270800CED5AD /* SwiftWebServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWebServer.swift; sourceTree = "<group>"; };
 		DBA3A21023BFE3D200962B66 /* SwiftWebServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftWebServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA3A21323BFE3D200962B66 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 		DB7A0F6A23C227AF00CED5AD /* static */ = {
 			isa = PBXGroup;
 			children = (
+				A03EDCF023E1B63C0015FD14 /* checkmark.png */,
 				DBDB18EB23C2887C0099A9B0 /* list.dash.png */,
 				DBDB18ED23C389080099A9B0 /* plus.png */,
 				DBDB18EC23C2887C0099A9B0 /* rectangle.stack.png */,
@@ -74,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				DBA3A21223BFE3D200962B66 /* SwiftWebServer */,
-				DBA3A21123BFE3D200962B66 /* Products */,
 				DBA3A21A23BFE3E700962B66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +88,7 @@
 				DBA3A21023BFE3D200962B66 /* SwiftWebServer */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		DBA3A21223BFE3D200962B66 /* SwiftWebServer */ = {
@@ -98,6 +102,8 @@
 				DBF7BCC723C4EF720068B3CA /* Sheet.swift */,
 				A03EDCEA23E06AF60015FD14 /* Form.swift */,
 				A03EDCEC23E097740015FD14 /* Section.swift */,
+				A03EDCEE23E19BF00015FD14 /* Picker.swift */,
+				DBA3A21123BFE3D200962B66 /* Products */,
 				DB7A0F6A23C227AF00CED5AD /* static */,
 				DBA3A22723BFED9700962B66 /* SwiftWebServer.entitlements */,
 			);
@@ -183,6 +189,7 @@
 				DBA3A22823BFEE3600962B66 /* TransactionView.swift in Sources */,
 				A03EDCED23E097740015FD14 /* Section.swift in Sources */,
 				A03EDCEB23E06AF60015FD14 /* Form.swift in Sources */,
+				A03EDCEF23E19BF00015FD14 /* Picker.swift in Sources */,
 				DBF7BCC423C4E8FD0068B3CA /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

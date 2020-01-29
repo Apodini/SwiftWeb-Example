@@ -42,6 +42,15 @@ struct TransactionView: View {
                             .frame(height: 60)
                     }
                         .frame(width: 698)
+                    
+//                    List {
+//                        Text("A")
+//                        Text("B")
+//
+//                        ForEach([1, 2, 3]) {
+//                            Text(String(describing: $0))
+//                        }
+//                    }
                 }
             }
         }
