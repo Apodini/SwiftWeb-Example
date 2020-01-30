@@ -17,12 +17,10 @@ class SwiftWebServer {
     let server: HttpServer
     var staticFilesPath: String?
 
-    init() {
+    init<ContentView>(contentView: ContentView) where ContentView: View {
         server = HttpServer()
 
         server["/"] = { request in
-            let contentView = ContentView()
-            
             return HttpResponse.ok(.text(SwiftWeb.render(view: contentView)))
         }
 

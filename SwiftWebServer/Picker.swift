@@ -9,16 +9,16 @@
 import Foundation
 import SwiftWeb
 
-struct Picker<Label, SelectionValue, Content>: View where Label: View, SelectionValue: Hashable, Content: View  {
+public struct Picker<Label, SelectionValue, Content>: View where Label: View, SelectionValue: Hashable, Content: View  {
+    public typealias Body = Never
+    
     let content: Content
     
-    init<S>(_ title: S, selection: SelectionValue, @ViewBuilder content: () -> Content) where S: StringProtocol {
+    public init<S>(_ title: S, selection: SelectionValue, @ViewBuilder content: () -> Content) where S: StringProtocol {
         self.content = content()
     }
     
-    var body: some View {
-        HStack {
-            content
-        }
+    public var html: HTMLNode {
+        return .raw("")
     }
 }

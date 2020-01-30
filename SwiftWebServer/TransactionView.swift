@@ -29,28 +29,29 @@ struct TransactionView: View {
                     }
                     .frame(width: 698)
 
-                    List(listItems) { item in
-                        VStack(alignment: .leading, spacing: 2.0) {
-                            Spacer()
-                            Text(item)
-                                .font(.system(size: 20, weight: .bold))
-                            Text("November 1, 2019 at 1:37 PM")
-                                .font(.system(size: 14, weight: .regular))
-                                .foregroundColor(Color(white: 0.55))
-                            Spacer()
+//                    List(listItems) { item in
+//                        VStack(alignment: .leading, spacing: 2.0) {
+//                            Spacer()
+//                            Text(item)
+//                                .font(.system(size: 20, weight: .bold))
+//                            Text("November 1, 2019 at 1:37 PM")
+//                                .font(.system(size: 14, weight: .regular))
+//                                .foregroundColor(Color(white: 0.55))
+//                            Spacer()
+//                        }
+//                            .frame(height: 60)
+//                    }
+//                        .frame(width: 698)
+                    
+                    List {
+                        Text("A")
+                        Text("B")
+
+                        ForEach([1, 2, 3]) {
+                            Text(String(describing: $0))
                         }
-                            .frame(height: 60)
                     }
                         .frame(width: 698)
-                    
-//                    List {
-//                        Text("A")
-//                        Text("B")
-//
-//                        ForEach([1, 2, 3]) {
-//                            Text(String(describing: $0))
-//                        }
-//                    }
                 }
             }
         }

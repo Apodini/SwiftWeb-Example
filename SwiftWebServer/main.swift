@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import SwiftWeb
 
-let server = SwiftWebServer()
+let server = SwiftWebServer(contentView: ContentView(), path: #file)
+
 let semaphore = DispatchSemaphore(value: 0)
 
 do {
