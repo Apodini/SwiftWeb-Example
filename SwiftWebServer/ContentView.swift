@@ -11,11 +11,17 @@ import SwiftWeb
 struct ContentView: View {
     
     var body: some View {
-        ZStack {
-            TransactionView()
-            Sheet()
+        TransactionView()
+            .sheet(isPresented: true) {
+                EditTransactionView()
         }
         
+//        ZStack {
+//            TransactionView()
+//            EditTransactionView()
+//        }
+//    .anyView()
+//
 //        HStack {
 //            VStack {
 //                Text("Hello, World!")

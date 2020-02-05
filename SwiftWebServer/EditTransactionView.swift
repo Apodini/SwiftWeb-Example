@@ -9,7 +9,7 @@
 import Foundation
 import SwiftWeb
 
-public struct Sheet: View {
+public struct EditTransactionView: View {
     public var body: some View {
         VStack {
             Spacer()
@@ -35,23 +35,11 @@ public struct Sheet: View {
                             
                             Spacer()
                             
-                            HStack {
-                                Text("Expense")
-                                    .font(.system(size: 14))
-                                    .padding(.horizontal, 40)
-                                    .padding(.vertical, 8)
-                                Text("Income")
-                                    .font(.system(size: 14, weight: .medium))
-                                    .padding(.horizontal, 37)
-                                    .padding(.vertical, 5)
-                                    .background(Color(white: 1.0))
-                                    .cornerRadius(6)
-                                    .shadow(color: Color.init(white: 0).opacity(0.24), radius: 5, x: 0, y: 2)
-                                    .padding(.horizontal, 3)
-                                    .padding(.vertical, 3)
+                            Picker("Transaction Type", selection: "Income") {
+                                ForEach(["Income", "Expense"]) { transactionType in
+                                    Text(transactionType).tag(transactionType)
+                                }
                             }
-                            .background(Color(white: 0.93))
-                            .cornerRadius(8)
                         }.frame(height: 44)
                     }
                     

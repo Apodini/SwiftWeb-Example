@@ -14,12 +14,10 @@ let server = SwiftWebServer(contentView: ContentView(), path: #file)
 let semaphore = DispatchSemaphore(value: 0)
 
 do {
-  try server.start()
-  print("listening on port \(try server.port())")
-  semaphore.wait()
+    try server.start()
+    print("listening on port \(try server.port())")
+    semaphore.wait()
 } catch {
-  print("error: \(error)")
-  semaphore.signal()
+    print("error: \(error)")
+    semaphore.signal()
 }
-
-
