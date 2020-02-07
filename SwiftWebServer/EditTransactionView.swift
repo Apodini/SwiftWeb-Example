@@ -11,9 +11,6 @@ import SwiftWeb
 
 public struct EditTransactionView: View {
     public var body: some View {
-        VStack {
-            Spacer()
-            
             VStack {
                 HStack {
                     Spacer()
@@ -87,12 +84,5 @@ public struct EditTransactionView: View {
                     }
                 }
             }
-            .frame(width: 618.0)
-            .cornerRadius(10.0)
-            .shadow(color: Color(white: 0.0).opacity(0.25), radius: 129.0, x: 0.0, y: 2.0)
-            
-            Spacer()
-        }
-            .background(Color(white: 0.0).opacity(0.14))
     }
 }

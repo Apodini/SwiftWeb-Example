@@ -15,29 +15,5 @@ struct ContentView: View {
             .sheet(isPresented: true) {
                 EditTransactionView()
         }
-        
-//        ZStack {
-//            TransactionView()
-//            EditTransactionView()
-//        }
-//    .anyView()
-//
-//        HStack {
-//            VStack {
-//                Text("Hello, World!")
-//                Spacer()
-//                    .padding()
-//                    .border(Color.red)
-//                    .padding()
-//                    .border(Color.blue)
-//
-//                HStack {
-//                    Spacer()
-//                        .padding()
-//                        .border(Color.green)
-//                }
-//            }
-//            .border(Color.gray)
-//        }
     }
 }
