@@ -11,9 +11,20 @@ import SwiftWeb
 struct ContentView: View {
     
     var body: some View {
-        TransactionView()
-            .sheet(isPresented: true) {
-                EditTransactionView()
+        TabView(selection: 1) {
+            Text("AllAccountsView")
+                .tabItem {
+                    Text("Accounts")
+                    Image("rectangle.stack.png")
+            }
+            
+            TransactionView()
+                .sheet(isPresented: false) {
+                    EditTransactionView()
+            }.tabItem {
+                Text("Transactions")
+                Image("list.dash.png")
+            }
         }
     }
 }

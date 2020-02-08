@@ -29,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		A03EDCF023E1B63C0015FD14 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
+		A09D730623EEBE9C00FEEA49 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		DBA3A21023BFE3D200962B66 /* SwiftWebServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftWebServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA3A21323BFE3D200962B66 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DBA3A22023BFE97200962B66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		DB7A0F6A23C227AF00CED5AD /* static */ = {
 			isa = PBXGroup;
 			children = (
+				A09D730623EEBE9C00FEEA49 /* placeholder.png */,
 				A03EDCF023E1B63C0015FD14 /* checkmark.png */,
 				DBDB18EB23C2887C0099A9B0 /* list.dash.png */,
 				DBDB18ED23C389080099A9B0 /* plus.png */,
