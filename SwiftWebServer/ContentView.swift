@@ -19,7 +19,7 @@ struct ContentView: View {
             }
             
             TransactionView()
-                .sheet(isPresented: false) {
+                .sheet(isPresented: true) {
                     EditTransactionView()
             }.tabItem {
                 Text("Transactions")
