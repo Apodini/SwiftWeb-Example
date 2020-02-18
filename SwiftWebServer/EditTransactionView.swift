@@ -44,7 +44,8 @@ public struct EditTransactionView: View {
                                     .font(.system(size: 18))
                                 
                                 Spacer()
-                            }.frame(height: 44)
+                            }
+                                .frame(height: 44)
                             
                             Color(white: 0.83).frame(height: 0.5)
                             
@@ -71,6 +72,7 @@ public struct EditTransactionView: View {
                         }.frame(height: 44)
                     }
                 }
+                .navigationBarTitle("Create Transaction", displayMode: .inline)
             }
     }
 }

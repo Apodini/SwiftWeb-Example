@@ -11,14 +11,14 @@ import SwiftWeb
 struct ContentView: View {
     
     var body: some View {
-        TabView(selection: 1) {
-            Text("AllAccountsView")
+        TabView(selection: 0) {
+            AllAccountsView()
                 .tabItem {
                     Text("Accounts")
                     Image("rectangle.stack.png")
             }
             
-            TransactionView()
+            AllTransactionsView()
                 .sheet(isPresented: true) {
                     EditTransactionView()
             }.tabItem {

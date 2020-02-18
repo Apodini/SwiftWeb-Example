@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0B05A5B23FC8D140047A5EE /* AllAccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B05A5A23FC8D140047A5EE /* AllAccountsView.swift */; };
 		DBA3A21423BFE3D200962B66 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3A21323BFE3D200962B66 /* main.swift */; };
 		DBA3A21C23BFE3E700962B66 /* SwiftWeb in Frameworks */ = {isa = PBXBuildFile; productRef = DBA3A21B23BFE3E700962B66 /* SwiftWeb */; };
 		DBA3A22123BFE97200962B66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3A22023BFE97200962B66 /* ContentView.swift */; };
-		DBA3A22823BFEE3600962B66 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3A22223BFE9DB00962B66 /* TransactionView.swift */; };
+		DBA3A22823BFEE3600962B66 /* AllTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3A22223BFE9DB00962B66 /* AllTransactionsView.swift */; };
 		DBF7BCC423C4E8FD0068B3CA /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7BCC323C4E8FD0068B3CA /* TabBar.swift */; };
 		DBF7BCC823C4EF720068B3CA /* EditTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF7BCC723C4EF720068B3CA /* EditTransactionView.swift */; };
 /* End PBXBuildFile section */
@@ -30,10 +31,12 @@
 /* Begin PBXFileReference section */
 		A03EDCF023E1B63C0015FD14 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
 		A09D730623EEBE9C00FEEA49 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		A0B05A5A23FC8D140047A5EE /* AllAccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAccountsView.swift; sourceTree = "<group>"; };
+		A0B05A5C23FC98C60047A5EE /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
 		DBA3A21023BFE3D200962B66 /* SwiftWebServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftWebServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA3A21323BFE3D200962B66 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DBA3A22023BFE97200962B66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DBA3A22223BFE9DB00962B66 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		DBA3A22223BFE9DB00962B66 /* AllTransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTransactionsView.swift; sourceTree = "<group>"; };
 		DBA3A22723BFED9700962B66 /* SwiftWebServer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftWebServer.entitlements; sourceTree = "<group>"; };
 		DBDB18EB23C2887C0099A9B0 /* list.dash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.dash.png; sourceTree = "<group>"; };
 		DBDB18EC23C2887C0099A9B0 /* rectangle.stack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rectangle.stack.png; sourceTree = "<group>"; };
@@ -57,6 +60,7 @@
 		DB7A0F6A23C227AF00CED5AD /* static */ = {
 			isa = PBXGroup;
 			children = (
+				A0B05A5C23FC98C60047A5EE /* SF-Pro-Rounded-Bold.otf */,
 				A09D730623EEBE9C00FEEA49 /* placeholder.png */,
 				A03EDCF023E1B63C0015FD14 /* checkmark.png */,
 				DBDB18EB23C2887C0099A9B0 /* list.dash.png */,
@@ -88,7 +92,8 @@
 			children = (
 				DBA3A21323BFE3D200962B66 /* main.swift */,
 				DBA3A22023BFE97200962B66 /* ContentView.swift */,
-				DBA3A22223BFE9DB00962B66 /* TransactionView.swift */,
+				DBA3A22223BFE9DB00962B66 /* AllTransactionsView.swift */,
+				A0B05A5A23FC8D140047A5EE /* AllAccountsView.swift */,
 				DBF7BCC323C4E8FD0068B3CA /* TabBar.swift */,
 				DBF7BCC723C4EF720068B3CA /* EditTransactionView.swift */,
 				DBA3A21123BFE3D200962B66 /* Products */,
@@ -171,7 +176,8 @@
 				DBA3A22123BFE97200962B66 /* ContentView.swift in Sources */,
 				DBA3A21423BFE3D200962B66 /* main.swift in Sources */,
 				DBF7BCC823C4EF720068B3CA /* EditTransactionView.swift in Sources */,
-				DBA3A22823BFEE3600962B66 /* TransactionView.swift in Sources */,
+				DBA3A22823BFEE3600962B66 /* AllTransactionsView.swift in Sources */,
+				A0B05A5B23FC8D140047A5EE /* AllAccountsView.swift in Sources */,
 				DBF7BCC423C4E8FD0068B3CA /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
