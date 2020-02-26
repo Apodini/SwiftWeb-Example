@@ -11,7 +11,7 @@ import SwiftWeb
 struct ContentView: View {
     
     var body: some View {
-        TabView(selection: 0) {
+        TabView(selection: 1) {
             AllAccountsView()
                 .tabItem {
                     Text("Accounts")

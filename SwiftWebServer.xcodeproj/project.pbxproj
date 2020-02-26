@@ -30,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		A03EDCF023E1B63C0015FD14 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
+		A07D6DC32403F57F00B7E645 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		A09D730623EEBE9C00FEEA49 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		A0B05A5A23FC8D140047A5EE /* AllAccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAccountsView.swift; sourceTree = "<group>"; };
 		A0B05A5C23FC98C60047A5EE /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
@@ -66,6 +67,7 @@
 				DBDB18EB23C2887C0099A9B0 /* list.dash.png */,
 				DBDB18ED23C389080099A9B0 /* plus.png */,
 				DBDB18EC23C2887C0099A9B0 /* rectangle.stack.png */,
+				A07D6DC32403F57F00B7E645 /* script.js */,
 			);
 			path = static;
 			sourceTree = "<group>";
