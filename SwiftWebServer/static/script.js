@@ -11,6 +11,23 @@ socket.onmessage = (event) => {
 };
 
 document.onclick = (event) => {
-    console.log(event.target);
-    socket.send("click event")
+    let tapID = findTapId(event.target)
+    console.log(`tap on ${tapID}`);
+    socket.send(tapID)
 };
+
+function findTapId(target) {
+    let currentElement = target;
+
+    while (true) {
+        if (currentElement.getAttribute("tap-id") !== null) {
+            return currentElement.getAttribute("tap-id");
+        }
+
+        if (currentElement.parentElement !== null) {
+            currentElement = currentElement.parentElement;
+        } else {
+            return null;
+        }
+    }
+}
