@@ -7,7 +7,7 @@ socket.onopen = (event) => {
 };
 
 socket.onmessage = (event) => {
-    console.log(event);
+    document.body.innerHTML = event.data;
 };
 
 document.onclick = (event) => {
