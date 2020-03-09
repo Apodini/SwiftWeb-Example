@@ -9,38 +9,13 @@
 import Foundation
 import SwiftWeb
 
-struct ContentView: View, TypeErasedTapGestureView {
-    var viewNode: ViewNode?
-    
-    var tapGestureViewID: String {
-        viewNode?.state["tapGestureViewID"] as? String ?? ""
-    }
-    
-    func action() {
-        viewNode?.state["counter"] = (viewNode?.state["counter"] as? Int ?? -1) + 1
-    }
-
-    var initialState: [String : Any] {
-        [
-            "counter": 5,
-            "tapGestureViewID": UUID().uuidString
-        ]
-    }
+struct ContentView: View {
     
     var body: some View {
-//        action = {
-//            view.viewNode?.state["counter"] = (view.viewNode?.state["counter"] as? Int ?? 0) + 1
-//            print(view.viewNode?.state["counter"])
-//        }
-        
-        return Text(String(describing: viewNode?.state["counter"]))
-    }
-    
-    public var html: HTMLNode {
-        body.html.withCustomAttribute(
-            key: "tap-id",
-            value: tapGestureViewID
-        )
+        VStack {
+            Counter()
+            Counter()
+        }
     }
     
 //    var body: some View {
@@ -60,4 +35,35 @@ struct ContentView: View, TypeErasedTapGestureView {
 //            }
 //        }
 //    }
+}
+
+struct Counter: View, TypeErasedTapGestureView {
+    @State var counter = 0
+    @State var tapId = UUID()
+    
+    var tapGestureViewID: String {
+        return tapId.uuidString
+    }
+    
+    func action() {
+        counter += 1
+    }
+    
+    func html(forHTMLOfSubnodes htmlOfSubnodes: [HTMLNode]) -> HTMLNode {
+        let htmlForDebugging: HTMLNode =
+            .div(style: [.justifyContent: .center, .alignItems: .center]) {
+                .div(style: [.flexGrow: .zero]) {
+                    .raw(String(describing: counter))
+                }
+        }
+        
+        return htmlForDebugging.withCustomAttribute(
+            key: "tap-id",
+            value: tapGestureViewID
+        )
+    }
+    
+    var body: some View {
+        return Text(String(describing: counter))
+    }
 }
