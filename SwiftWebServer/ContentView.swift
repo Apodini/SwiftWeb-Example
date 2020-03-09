@@ -37,33 +37,30 @@ struct ContentView: View {
 //    }
 }
 
-struct Counter: View, TypeErasedTapGestureView {
+struct Counter: View {
     @State var counter = 0
-    @State var tapId = UUID()
-    
-    var tapGestureViewID: String {
-        return tapId.uuidString
-    }
-    
+//    @State var tapId = UUID()
+//
+//    var tapGestureViewID: String {
+//        return tapId.uuidString
+//    }
+//
     func action() {
+        print("action!")
         counter += 1
     }
     
-    func html(forHTMLOfSubnodes htmlOfSubnodes: [HTMLNode]) -> HTMLNode {
-        let htmlForDebugging: HTMLNode =
-            .div(style: [.justifyContent: .center, .alignItems: .center]) {
-                .div(style: [.flexGrow: .zero]) {
-                    .raw(String(describing: counter))
-                }
-        }
-        
-        return htmlForDebugging.withCustomAttribute(
-            key: "tap-id",
-            value: tapGestureViewID
-        )
-    }
+//    func html(forHTMLOfSubnodes htmlOfSubnodes: [HTMLNode]) -> HTMLNode {
+//        .div(style: [.justifyContent: .center, .alignItems: .center]) {
+//                .div(style: [.flexGrow: .zero]) {
+//                    .raw(String(describing: counter))
+//                }
+//        }
+//    }
     
     var body: some View {
-        return Text(String(describing: counter))
+        return Text(String(describing: counter)).onTapGesture {
+            self.action()
+        }
     }
 }
