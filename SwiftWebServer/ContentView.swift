@@ -10,8 +10,6 @@ import Foundation
 import SwiftWeb
 
 struct ContentView: View {
-    @State var string = "lel "
-    
 //    var body: some View {
 //        VStack(spacing: 20) {
 //            Counter()
@@ -22,23 +20,13 @@ struct ContentView: View {
 //        }
 //    }
     
-//    var body: some View {
-//        TabView(selection: 1) {
-//            Text("All Accounts View")
-//                .tabItem {
-//                    Text("Accounts")
-//                    Image("rectangle.stack.png")
-//            }
-//
-//            Text("All Transactions View")
-//                .sheet(isPresented: true) {
-//                    EditTransactionView()
-//            }.tabItem {
-//                Text("Transactions")
-//                Image("list.dash.png")
-//            }
-//        }
-//    }
+    var body: some View {
+        TabView(selection: 1) {
+            Text("All Accounts View")
+            Text("All Transactions View")
+            Text("A third view")
+        }
+    }
     
 //    var body: some View {
 //        TabView(selection: 1) {
