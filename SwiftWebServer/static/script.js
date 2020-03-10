@@ -8,6 +8,7 @@ socket.onopen = (event) => {
 
 socket.onmessage = (event) => {
     document.body.innerHTML = event.data;
+    console.log("body updated")
 };
 
 document.onclick = (event) => {
