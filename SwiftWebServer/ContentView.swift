@@ -20,31 +20,31 @@ struct ContentView: View {
 //        }
 //    }
     
-    var body: some View {
-        TabView(selection: 1) {
-            Text("All Accounts View")
-            Text("All Transactions View")
-            Text("A third view")
-        }
-    }
-    
 //    var body: some View {
 //        TabView(selection: 1) {
-//            AllAccountsView()
-//                .tabItem {
-//                    Text("Accounts")
-//                    Image("rectangle.stack.png")
-//            }
-//
-//            AllTransactionsView()
-//                .sheet(isPresented: true) {
-//                    EditTransactionView()
-//            }.tabItem {
-//                Text("Transactions")
-//                Image("list.dash.png")
-//            }
+//            Text("All Accounts View")
+//            Text("All Transactions View")
+//            Text("A third view")
 //        }
 //    }
+    
+    var body: some View {
+        TabView(selection: 1) {
+            AllAccountsView()
+                .tabItem {
+                    Text("Accounts")
+                    Image("rectangle.stack.png")
+            }
+
+            AllTransactionsView()
+                .sheet(isPresented: true) {
+                    EditTransactionView()
+            }.tabItem {
+                Text("Transactions")
+                Image("list.dash.png")
+            }
+        }
+    }
 }
 
 struct Counter: View {
