@@ -14,7 +14,7 @@ struct AllTransactionsView: View {
     
     var body: some View {
         NavigationView {
-            List(listItems) { item in
+            List(listItems, id: \.self) { item in
                 VStack(alignment: .leading, spacing: 2.0) {
                     Spacer()
                     Text(item)
