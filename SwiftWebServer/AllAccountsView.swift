@@ -13,10 +13,10 @@ struct AllAccountsView: View {
     let accounts: [(name: String, amount: String)] = [("Safe", "$2523.80"), ("Under my Pillow", "$2500000")]
     
     var body: some View {
-//        ZStack {
-//            Color(red:0.95, green:0.95, blue:0.96)
-//            VStack {
-//                NavigationView {
+        ZStack {
+            Color(red:0.95, green:0.95, blue:0.96)
+            VStack {
+                NavigationView {
                     VStack(spacing: 26.0) {
                         ForEach(accounts) { item in
                             VStack(spacing: 10.0) {
@@ -29,9 +29,9 @@ struct AllAccountsView: View {
                             .cornerRadius(14.0)
                         }
                     }.padding(.top, 30)
-//                        .navigationBarTitle("Accounts")
-//                }.frame(width: 698)
-//            }
-//        }
+                        .navigationBarTitle("Accounts")
+                }.frame(width: 698)
+            }
+        }
     }
 }
