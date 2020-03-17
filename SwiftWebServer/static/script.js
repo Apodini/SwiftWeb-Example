@@ -14,7 +14,7 @@ socket.onmessage = (event) => {
 document.onclick = (event) => {
     let tapID = findTapId(event.target)
     console.log(`tap on ${tapID}`);
-    socket.send(tapID)
+    socket.send(tapID);
 };
 
 function findTapId(target) {

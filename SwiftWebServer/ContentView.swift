@@ -10,23 +10,7 @@ import Foundation
 import SwiftWeb
 
 struct ContentView: View {
-//    var body: some View {
-//        VStack(spacing: 20) {
-//            Counter()
-//            Counter()
-//            Text(string).onTapGesture {
-//                self.string += "lel "
-//            }
-//        }
-//    }
-    
-//    var body: some View {
-//        TabView(selection: 1) {
-//            Text("All Accounts View")
-//            Text("All Transactions View")
-//            Text("A third view")
-//        }
-//    }
+    @State var presentAddTransaction = false
     
     var body: some View {
         TabView(selection: 1) {
@@ -36,15 +20,33 @@ struct ContentView: View {
                     Image("rectangle.stack.png")
             }
 
-            AllTransactionsView()
-                .sheet(isPresented: true) {
-                    EditTransactionView()
-            }.tabItem {
+            VStack {
+                AllTransactionsView()
+                    .sheet(isPresented: $presentAddTransaction) {
+                        EditTransactionView()
+                }
+                Text("+").onTapGesture {
+                    self.presentAddTransaction = true
+                }
+            }
+            .tabItem {
                 Text("Transactions")
                 Image("list.dash.png")
             }
         }
     }
+    
+//    var body: some View {
+//        Section(header: Text("Date")) {
+//            HStack {
+//                Text("Date")
+//
+//                Spacer()
+//
+//                Text("11/1/19, 13:37 PM")
+//            }
+//        }
+//    }
 }
 
 struct Counter: View {
