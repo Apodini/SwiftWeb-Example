@@ -10,6 +10,8 @@ import Foundation
 import SwiftWeb
 
 public struct EditTransactionView: View {
+    @State var transactionType: String = "Income"
+    
     public var body: some View {
         NavigationView {
                 Form {
@@ -20,7 +22,7 @@ public struct EditTransactionView: View {
                             
                             Spacer()
                             
-                            Picker("Transaction Type", selection: "Income") {
+                            Picker("Transaction Type", selection: $transactionType) {
                                 ForEach(["Income", "Expense"]) { transactionType in
                                     Text(transactionType).tag(transactionType)
                                 }
