@@ -22,12 +22,12 @@ struct ContentView: View {
 
             VStack {
                 AllTransactionsView()
-                    .sheet(isPresented: $presentAddTransaction) {
-                        EditTransactionView()
-                }
-                Text("+").onTapGesture {
+                Button("+") {
                     self.presentAddTransaction = true
                 }
+            }
+            .sheet(isPresented: $presentAddTransaction) {
+                EditTransactionView()
             }
             .tabItem {
                 Text("Transactions")
