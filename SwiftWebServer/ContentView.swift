@@ -10,7 +10,6 @@ import Foundation
 import SwiftWeb
 
 struct ContentView: View {
-    @State var presentAddTransaction = false
     
     var body: some View {
         TabView(selection: 1) {
@@ -19,16 +18,7 @@ struct ContentView: View {
                     Text("Accounts")
                     Image("rectangle.stack.png")
             }
-
-            VStack {
-                AllTransactionsView()
-                Button("+") {
-                    self.presentAddTransaction = true
-                }
-            }
-            .sheet(isPresented: $presentAddTransaction) {
-                EditTransactionView()
-            }
+            AllTransactionsView()
             .tabItem {
                 Text("Transactions")
                 Image("list.dash.png")
@@ -36,17 +26,17 @@ struct ContentView: View {
         }
     }
     
-//    var body: some View {
-//        Section(header: Text("Date")) {
-//            HStack {
-//                Text("Date")
-//
-//                Spacer()
-//
-//                Text("11/1/19, 13:37 PM")
-//            }
-//        }
-//    }
+    //    var body: some View {
+    //        Section(header: Text("Date")) {
+    //            HStack {
+    //                Text("Date")
+    //
+    //                Spacer()
+    //
+    //                Text("11/1/19, 13:37 PM")
+    //            }
+    //        }
+    //    }
 }
 
 struct Counter: View {

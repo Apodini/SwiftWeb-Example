@@ -12,6 +12,8 @@ import SwiftWeb
 struct AllTransactionsView: View {
     let listItems = ["Transaction 1", "Transaction 2", "Transaction 3", "Transaction 4"]
     
+    @State var presentAddTransaction = false
+    
     var body: some View {
         NavigationView {
             List(listItems, id: \.self) { item in
@@ -24,9 +26,15 @@ struct AllTransactionsView: View {
                         .foregroundColor(Color(white: 0.55))
                     Spacer()
                 }
-                    .frame(height: 60)
+                .frame(height: 60)
             }
-                .navigationBarTitle("Transactions")
+            .navigationBarTitle("Transactions")
+            .navigationBarItems(trailing: Button("+", action: {
+                self.presentAddTransaction = true
+            }))
+                .sheet(isPresented: $presentAddTransaction) {
+                    EditTransactionView()
+            }
         }.frame(width: 698)
     }
 }
