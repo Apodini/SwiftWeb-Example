@@ -32,7 +32,9 @@ public struct EditTransactionView: View {
                     
                     Section(header: Text("Description")) {
                         HStack {
-                            Text("Latest Heist")
+//                            Text("Latest Heist")
+//                                .font(.system(size: 18))
+                            TextField("Description")
                                 .font(.system(size: 18))
                             
                             Spacer()
