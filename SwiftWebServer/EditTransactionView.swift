@@ -11,6 +11,12 @@ import SwiftWeb
 
 public struct EditTransactionView: View {
     @State var transactionType: String = "Income"
+    @State var description: String = ""
+    
+    public func html(forHTMLOfSubnodes htmlOfSubnodes: [HTMLNode]) -> HTMLNode {
+        print("state while rendering in EditTransactionView: \(description)")
+        return htmlOfSubnodes.joined()
+    }
     
     public var body: some View {
         NavigationView {
@@ -34,7 +40,7 @@ public struct EditTransactionView: View {
                         HStack {
 //                            Text("Latest Heist")
 //                                .font(.system(size: 18))
-                            TextField("Description")
+                            TextField("Description", text: $description)
                                 .font(.system(size: 18))
                             
                             Spacer()

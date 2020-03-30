@@ -33,8 +33,8 @@ document.onchange = (event) => {
     console.log(`change event`);
     
     if (event.srcElement.hasAttribute("change-event-responder")) {
-        let viewID = currentElement.getAttribute("id");
-        
+        let viewID = event.srcElement.getAttribute("id");
+
         socket.send(JSON.stringify({
             change: {
                 id: viewID,
