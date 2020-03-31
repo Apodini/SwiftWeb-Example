@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0AF17C524324E1700C22177 /* EditAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF17C324324E1700C22177 /* EditAmount.swift */; };
+		A0AF17C624324E1700C22177 /* EditTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF17C424324E1700C22177 /* EditTransaction.swift */; };
+		A0AF17C824324F3F00C22177 /* XpenseModel in Frameworks */ = {isa = PBXBuildFile; productRef = A0AF17C724324F3F00C22177 /* XpenseModel */; };
 		A0B05A5B23FC8D140047A5EE /* AllAccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B05A5A23FC8D140047A5EE /* AllAccountsView.swift */; };
 		DBA3A21423BFE3D200962B66 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3A21323BFE3D200962B66 /* main.swift */; };
 		DBA3A21C23BFE3E700962B66 /* SwiftWeb in Frameworks */ = {isa = PBXBuildFile; productRef = DBA3A21B23BFE3E700962B66 /* SwiftWeb */; };
@@ -32,6 +35,9 @@
 		A03EDCF023E1B63C0015FD14 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
 		A07D6DC32403F57F00B7E645 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		A09D730623EEBE9C00FEEA49 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		A0AF17C024324D9B00C22177 /* XpenseModel */ = {isa = PBXFileReference; lastKnownFileType = folder; path = XpenseModel; sourceTree = "<group>"; };
+		A0AF17C324324E1700C22177 /* EditAmount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAmount.swift; sourceTree = "<group>"; };
+		A0AF17C424324E1700C22177 /* EditTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTransaction.swift; sourceTree = "<group>"; };
 		A0B05A5A23FC8D140047A5EE /* AllAccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAccountsView.swift; sourceTree = "<group>"; };
 		A0B05A5C23FC98C60047A5EE /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
 		DBA3A21023BFE3D200962B66 /* SwiftWebServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftWebServer; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,12 +58,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBA3A21C23BFE3E700962B66 /* SwiftWeb in Frameworks */,
+				A0AF17C824324F3F00C22177 /* XpenseModel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0AF17C224324DE400C22177 /* EditTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				A0AF17C324324E1700C22177 /* EditAmount.swift */,
+				A0AF17C424324E1700C22177 /* EditTransaction.swift */,
+			);
+			path = EditTransaction;
+			sourceTree = "<group>";
+		};
 		DB7A0F6A23C227AF00CED5AD /* static */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +91,7 @@
 		DBA3A20723BFE3D200962B66 = {
 			isa = PBXGroup;
 			children = (
+				A0AF17C024324D9B00C22177 /* XpenseModel */,
 				DBA3A21223BFE3D200962B66 /* SwiftWebServer */,
 				DBA3A21A23BFE3E700962B66 /* Frameworks */,
 			);
@@ -92,6 +109,7 @@
 		DBA3A21223BFE3D200962B66 /* SwiftWebServer */ = {
 			isa = PBXGroup;
 			children = (
+				A0AF17C224324DE400C22177 /* EditTransaction */,
 				DBA3A21323BFE3D200962B66 /* main.swift */,
 				DBA3A22023BFE97200962B66 /* ContentView.swift */,
 				DBA3A22223BFE9DB00962B66 /* AllTransactionsView.swift */,
@@ -130,6 +148,7 @@
 			name = SwiftWebServer;
 			packageProductDependencies = (
 				DBA3A21B23BFE3E700962B66 /* SwiftWeb */,
+				A0AF17C724324F3F00C22177 /* XpenseModel */,
 			);
 			productName = SwiftWebServer;
 			productReference = DBA3A21023BFE3D200962B66 /* SwiftWebServer */;
@@ -176,8 +195,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBA3A22123BFE97200962B66 /* ContentView.swift in Sources */,
+				A0AF17C524324E1700C22177 /* EditAmount.swift in Sources */,
 				DBA3A21423BFE3D200962B66 /* main.swift in Sources */,
 				DBF7BCC823C4EF720068B3CA /* EditTransactionView.swift in Sources */,
+				A0AF17C624324E1700C22177 /* EditTransaction.swift in Sources */,
 				DBA3A22823BFEE3600962B66 /* AllTransactionsView.swift in Sources */,
 				A0B05A5B23FC8D140047A5EE /* AllAccountsView.swift in Sources */,
 				DBF7BCC423C4E8FD0068B3CA /* TabBar.swift in Sources */,
@@ -350,6 +371,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A0AF17C724324F3F00C22177 /* XpenseModel */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = XpenseModel;
+		};
 		DBA3A21B23BFE3E700962B66 /* SwiftWeb */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SwiftWeb;

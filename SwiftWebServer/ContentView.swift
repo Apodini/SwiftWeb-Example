@@ -18,6 +18,7 @@ struct ContentView: View {
                     Text("Accounts")
                     Image("rectangle.stack.png")
             }
+            
             AllTransactionsView()
             .tabItem {
                 Text("Transactions")
@@ -25,18 +26,6 @@ struct ContentView: View {
             }
         }
     }
-    
-    //    var body: some View {
-    //        Section(header: Text("Date")) {
-    //            HStack {
-    //                Text("Date")
-    //
-    //                Spacer()
-    //
-    //                Text("11/1/19, 13:37 PM")
-    //            }
-    //        }
-    //    }
 }
 
 struct Counter: View {

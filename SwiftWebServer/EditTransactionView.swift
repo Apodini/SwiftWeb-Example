@@ -8,10 +8,14 @@
 
 import Foundation
 import SwiftWeb
+import XpenseModel
 
 public struct EditTransactionView: View {
-    @State var transactionType: String = "Income"
+    typealias Classification = XpenseModel.Transaction.Classification
+
+    @State var classification: Classification = .income
     @State var description: String = ""
+    @State var amount: Double = 0
     
     public func html(forHTMLOfSubnodes htmlOfSubnodes: [HTMLNode]) -> HTMLNode {
         print("state while rendering in EditTransactionView: \(description)")
@@ -23,14 +27,21 @@ public struct EditTransactionView: View {
                 Form {
                     Section(header: Text("Amount")) {
                         HStack {
-                            Text("2 500 000")
+                            HStack(alignment: .center, spacing: 2) {
+                                Text("\(classification.sign)")
+                                TextField(
+                                    "Amount",
+                                    value: $amount,
+                                    formatter: NumberFormatter.decimalAmount
+                                )
+                            }
                                 .font(.system(size: 18))
                             
                             Spacer()
                             
-                            Picker("Transaction Type", selection: $transactionType) {
-                                ForEach(["Income", "Expense"]) { transactionType in
-                                    Text(transactionType).tag(transactionType)
+                            Picker("Transaction Type", selection: $classification) {
+                                ForEach(Classification.allCases) { transactionType in
+                                    Text(transactionType.rawValue).tag(transactionType)
                                 }
                             }
                         }.frame(height: 44)
@@ -38,8 +49,6 @@ public struct EditTransactionView: View {
                     
                     Section(header: Text("Description")) {
                         HStack {
-//                            Text("Latest Heist")
-//                                .font(.system(size: 18))
                             TextField("Description", text: $description)
                                 .font(.system(size: 18))
                             
