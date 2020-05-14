@@ -12,7 +12,7 @@ socket.onmessage = (event) => {
 };
 
 document.onclick = (event) => {
-    let viewID = findClickResponderViewId(event.target)
+    let viewID = findResponderID(event.target, "click-event-responder")
     
     if (event.target.tagName === "INPUT") {
         return
@@ -30,11 +30,9 @@ document.onclick = (event) => {
 };
 
 document.onchange = (event) => {
-    console.log(`change event`);
+    let viewID = findResponderID(event.target, "change-event-responder")
     
-    if (event.srcElement.hasAttribute("change-event-responder")) {
-        let viewID = event.srcElement.getAttribute("id");
-
+    if (viewID !== null) {
         socket.send(JSON.stringify({
             change: {
                 id: viewID,
@@ -44,13 +42,12 @@ document.onchange = (event) => {
     }
 };
 
-// bubbles the event up the tree to return the id of the first element with attribute
-// "clickresponder"
-function findClickResponderViewId(target) {
+// bubbles the event up from `target` to return the id of the first element with `attribute`
+function findResponderID(target, attribute) {
     let currentElement = target;
 
     while (true) {
-        if (currentElement.hasAttribute("click-event-responder")) {
+        if (currentElement.hasAttribute(attribute)) {
             return currentElement.getAttribute("id");
         }
 
