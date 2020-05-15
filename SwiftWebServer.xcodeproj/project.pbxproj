@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A04A642A246EEB610017E1E5 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04A6429246EEB610017E1E5 /* Server.swift */; };
+		A04A642D246EEBEF0017E1E5 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = A04A642C246EEBEF0017E1E5 /* Swifter */; };
 		A0AF17C524324E1700C22177 /* EditAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF17C324324E1700C22177 /* EditAmount.swift */; };
 		A0AF17C624324E1700C22177 /* EditTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF17C424324E1700C22177 /* EditTransaction.swift */; };
 		A0AF17C824324F3F00C22177 /* XpenseModel in Frameworks */ = {isa = PBXBuildFile; productRef = A0AF17C724324F3F00C22177 /* XpenseModel */; };
 		A0B05A5B23FC8D140047A5EE /* AllAccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B05A5A23FC8D140047A5EE /* AllAccountsView.swift */; };
-		A0DD3FEA24689E22007AD7F0 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DD3FE924689E22007AD7F0 /* Slider.swift */; };
 		DBA3A21423BFE3D200962B66 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3A21323BFE3D200962B66 /* main.swift */; };
 		DBA3A21C23BFE3E700962B66 /* SwiftWeb in Frameworks */ = {isa = PBXBuildFile; productRef = DBA3A21B23BFE3E700962B66 /* SwiftWeb */; };
 		DBA3A22123BFE97200962B66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3A22023BFE97200962B66 /* ContentView.swift */; };
@@ -35,14 +36,13 @@
 /* Begin PBXFileReference section */
 		A03EDCF023E1B63C0015FD14 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
 		A04A1C8E2463143C00E4B2EA /* quirin.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = quirin.jpeg; sourceTree = "<group>"; };
-		A07D6DC32403F57F00B7E645 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		A04A6429246EEB610017E1E5 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		A09D730623EEBE9C00FEEA49 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		A0AF17C024324D9B00C22177 /* XpenseModel */ = {isa = PBXFileReference; lastKnownFileType = folder; path = XpenseModel; sourceTree = "<group>"; };
 		A0AF17C324324E1700C22177 /* EditAmount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAmount.swift; sourceTree = "<group>"; };
 		A0AF17C424324E1700C22177 /* EditTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditTransaction.swift; sourceTree = "<group>"; };
 		A0B05A5A23FC8D140047A5EE /* AllAccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAccountsView.swift; sourceTree = "<group>"; };
 		A0B05A5C23FC98C60047A5EE /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
-		A0DD3FE924689E22007AD7F0 /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 		A0FD09B82450C75700547A7F /* turtlerock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turtlerock.jpg; sourceTree = "<group>"; };
 		DBA3A21023BFE3D200962B66 /* SwiftWebServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftWebServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA3A21323BFE3D200962B66 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -61,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A04A642D246EEBEF0017E1E5 /* Swifter in Frameworks */,
 				DBA3A21C23BFE3E700962B66 /* SwiftWeb in Frameworks */,
 				A0AF17C824324F3F00C22177 /* XpenseModel in Frameworks */,
 			);
@@ -89,7 +90,6 @@
 				DBDB18ED23C389080099A9B0 /* plus.png */,
 				DBDB18EC23C2887C0099A9B0 /* rectangle.stack.png */,
 				A0FD09B82450C75700547A7F /* turtlerock.jpg */,
-				A07D6DC32403F57F00B7E645 /* script.js */,
 			);
 			path = static;
 			sourceTree = "<group>";
@@ -115,6 +115,7 @@
 		DBA3A21223BFE3D200962B66 /* SwiftWebServer */ = {
 			isa = PBXGroup;
 			children = (
+				A04A6429246EEB610017E1E5 /* Server.swift */,
 				A0AF17C224324DE400C22177 /* EditTransaction */,
 				DBA3A21323BFE3D200962B66 /* main.swift */,
 				DBA3A22023BFE97200962B66 /* ContentView.swift */,
@@ -122,7 +123,6 @@
 				A0B05A5A23FC8D140047A5EE /* AllAccountsView.swift */,
 				DBF7BCC323C4E8FD0068B3CA /* TabBar.swift */,
 				DBF7BCC723C4EF720068B3CA /* EditTransactionView.swift */,
-				A0DD3FE924689E22007AD7F0 /* Slider.swift */,
 				DBA3A21123BFE3D200962B66 /* Products */,
 				DB7A0F6A23C227AF00CED5AD /* static */,
 				DBA3A22723BFED9700962B66 /* SwiftWebServer.entitlements */,
@@ -156,6 +156,7 @@
 			packageProductDependencies = (
 				DBA3A21B23BFE3E700962B66 /* SwiftWeb */,
 				A0AF17C724324F3F00C22177 /* XpenseModel */,
+				A04A642C246EEBEF0017E1E5 /* Swifter */,
 			);
 			productName = SwiftWebServer;
 			productReference = DBA3A21023BFE3D200962B66 /* SwiftWebServer */;
@@ -186,6 +187,7 @@
 			);
 			mainGroup = DBA3A20723BFE3D200962B66;
 			packageReferences = (
+				A04A642B246EEBEF0017E1E5 /* XCRemoteSwiftPackageReference "swifter" */,
 			);
 			productRefGroup = DBA3A21123BFE3D200962B66 /* Products */;
 			projectDirPath = "";
@@ -201,11 +203,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A04A642A246EEB610017E1E5 /* Server.swift in Sources */,
 				DBA3A22123BFE97200962B66 /* ContentView.swift in Sources */,
 				A0AF17C524324E1700C22177 /* EditAmount.swift in Sources */,
 				DBA3A21423BFE3D200962B66 /* main.swift in Sources */,
 				DBF7BCC823C4EF720068B3CA /* EditTransactionView.swift in Sources */,
-				A0DD3FEA24689E22007AD7F0 /* Slider.swift in Sources */,
 				A0AF17C624324E1700C22177 /* EditTransaction.swift in Sources */,
 				DBA3A22823BFEE3600962B66 /* AllTransactionsView.swift in Sources */,
 				A0B05A5B23FC8D140047A5EE /* AllAccountsView.swift in Sources */,
@@ -378,7 +380,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		A04A642B246EEBEF0017E1E5 /* XCRemoteSwiftPackageReference "swifter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/httpswift/swifter.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		A04A642C246EEBEF0017E1E5 /* Swifter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A04A642B246EEBEF0017E1E5 /* XCRemoteSwiftPackageReference "swifter" */;
+			productName = Swifter;
+		};
 		A0AF17C724324F3F00C22177 /* XpenseModel */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = XpenseModel;

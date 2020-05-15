@@ -9,7 +9,7 @@
 import Foundation
 import SwiftWeb
 
-let server = SwiftWebServer(contentView: ContentView(), path: #file) //rGuess: 0.5, gGuess: 0.5, bGuess: 0.5
+let server = Server(contentView: ContentView(), path: #file)
 
 let semaphore = DispatchSemaphore(value: 0)
 

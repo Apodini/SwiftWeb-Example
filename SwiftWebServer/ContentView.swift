@@ -9,45 +9,45 @@
 import Foundation
 import SwiftWeb
 
-//struct ContentView: View {
+struct ContentView: View {
 //    @State var sliderValueA: Double = 0.2
 //    @State var sliderValueB: Double = 0.5
+
+    var body: some View {
+        TabView(selection: 1) {
+            AllAccountsView()
+                .tabItem {
+                    Text("Accounts")
+                    Image("rectangle.stack.png")
+            }
+
+            AllTransactionsView()
+            .tabItem {
+                Text("Transactions")
+                Image("list.dash.png")
+            }
+        }
+
+//        VStack(spacing: 20) {
+//            CircleImage()
 //
-//    var body: some View {
-////        TabView(selection: 1) {
-////            AllAccountsView()
-////                .tabItem {
-////                    Text("Accounts")
-////                    Image("rectangle.stack.png")
-////            }
-////
-////            AllTransactionsView()
-////            .tabItem {
-////                Text("Transactions")
-////                Image("list.dash.png")
-////            }
-////        }
+//            VStack(alignment: .leading) {
+//                Text("Turtle Rock")
+//                    .font(.title)
+//                HStack(alignment: .leading) {
+//                    Text("Joshua Tree National Park")
+//                        .font(.subheadline)
+//                    Spacer()
+//                    Text("California")
+//                        .font(.subheadline)
+//                }
+//            }
+//            .padding()
 //
-////        VStack(spacing: 20) {
-////            CircleImage()
-////
-////            VStack(alignment: .leading) {
-////                Text("Turtle Rock")
-////                    .font(.title)
-////                HStack(alignment: .leading) {
-////                    Text("Joshua Tree National Park")
-////                        .font(.subheadline)
-////                    Spacer()
-////                    Text("California")
-////                        .font(.subheadline)
-////                }
-////            }
-////            .padding()
-////
-////            Spacer()
-////        }
-////            .padding(20)
-//
+//            Spacer()
+//        }
+//            .padding(20)
+
 //        VStack(spacing: 20) {
 //            Text(String(sliderValueA))
 //            Text(String(sliderValueB))
@@ -55,12 +55,6 @@ import SwiftWeb
 //            Slider(value: $sliderValueB)
 //        }
 //            .padding()
-//    }
-//}
-
-struct ContentView: View {
-    var body: some View {
-        Map()
     }
 }
 
