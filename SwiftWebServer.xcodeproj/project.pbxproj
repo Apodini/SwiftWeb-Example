@@ -17,6 +17,11 @@
 		A0D78F15246F00020089B9A0 /* Landmarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D78F14246F00020089B9A0 /* Landmarks.swift */; };
 		A0D78F18246F00620089B9A0 /* RGBullsEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D78F17246F00620089B9A0 /* RGBullsEye.swift */; };
 		A0E00F96247171600028D729 /* EditTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E00F95247171600028D729 /* EditTransactionView.swift */; };
+		A0E00F992472F1FD0028D729 /* StackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E00F982472F1FD0028D729 /* StackTest.swift */; };
+		A0E00F9B2472F2330028D729 /* NestedStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E00F9A2472F2330028D729 /* NestedStateView.swift */; };
+		A0E00F9D2472F2530028D729 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E00F9C2472F2530028D729 /* Counter.swift */; };
+		A0E00F9F2472F2990028D729 /* ThesisExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E00F9E2472F2980028D729 /* ThesisExample.swift */; };
+		A0E00FA12472F3250028D729 /* XPense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E00FA02472F3250028D729 /* XPense.swift */; };
 		DBA3A21423BFE3D200962B66 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3A21323BFE3D200962B66 /* main.swift */; };
 		DBA3A21C23BFE3E700962B66 /* SwiftWeb in Frameworks */ = {isa = PBXBuildFile; productRef = DBA3A21B23BFE3E700962B66 /* SwiftWeb */; };
 		DBA3A22123BFE97200962B66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3A22023BFE97200962B66 /* ContentView.swift */; };
@@ -48,6 +53,11 @@
 		A0D78F14246F00020089B9A0 /* Landmarks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmarks.swift; sourceTree = "<group>"; };
 		A0D78F17246F00620089B9A0 /* RGBullsEye.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBullsEye.swift; sourceTree = "<group>"; };
 		A0E00F95247171600028D729 /* EditTransactionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditTransactionView.swift; path = SwiftWebServer/EditTransactionView.swift; sourceTree = SOURCE_ROOT; };
+		A0E00F982472F1FD0028D729 /* StackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTest.swift; sourceTree = "<group>"; };
+		A0E00F9A2472F2330028D729 /* NestedStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedStateView.swift; sourceTree = "<group>"; };
+		A0E00F9C2472F2530028D729 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		A0E00F9E2472F2980028D729 /* ThesisExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThesisExample.swift; sourceTree = "<group>"; };
+		A0E00FA02472F3250028D729 /* XPense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPense.swift; sourceTree = "<group>"; };
 		A0FD09B82450C75700547A7F /* turtlerock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turtlerock.jpg; sourceTree = "<group>"; };
 		DBA3A21023BFE3D200962B66 /* SwiftWebServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftWebServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA3A21323BFE3D200962B66 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -90,6 +100,7 @@
 				DBA3A22223BFE9DB00962B66 /* AllTransactionsView.swift */,
 				A0B05A5A23FC8D140047A5EE /* AllAccountsView.swift */,
 				A0E00F95247171600028D729 /* EditTransactionView.swift */,
+				A0E00FA02472F3250028D729 /* XPense.swift */,
 			);
 			path = XPense;
 			sourceTree = "<group>";
@@ -108,6 +119,17 @@
 				A0D78F17246F00620089B9A0 /* RGBullsEye.swift */,
 			);
 			path = "RGBullsEye Tutorial";
+			sourceTree = "<group>";
+		};
+		A0E00F972472F0C50028D729 /* Example Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0E00F982472F1FD0028D729 /* StackTest.swift */,
+				A0E00F9A2472F2330028D729 /* NestedStateView.swift */,
+				A0E00F9C2472F2530028D729 /* Counter.swift */,
+				A0E00F9E2472F2980028D729 /* ThesisExample.swift */,
+			);
+			path = "Example Views";
 			sourceTree = "<group>";
 		};
 		DB7A0F6A23C227AF00CED5AD /* static */ = {
@@ -149,6 +171,7 @@
 				A0D78F12246EFFB90089B9A0 /* XPense */,
 				A0D78F13246EFFEC0089B9A0 /* Landmarks Tutorial */,
 				A0D78F16246F004A0089B9A0 /* RGBullsEye Tutorial */,
+				A0E00F972472F0C50028D729 /* Example Views */,
 				DBA3A21323BFE3D200962B66 /* main.swift */,
 				A04A6429246EEB610017E1E5 /* Server.swift */,
 				DBA3A22023BFE97200962B66 /* ContentView.swift */,
@@ -234,15 +257,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0E00FA12472F3250028D729 /* XPense.swift in Sources */,
 				A04A642A246EEB610017E1E5 /* Server.swift in Sources */,
 				DBA3A22123BFE97200962B66 /* ContentView.swift in Sources */,
+				A0E00F9D2472F2530028D729 /* Counter.swift in Sources */,
 				A0E00F96247171600028D729 /* EditTransactionView.swift in Sources */,
+				A0E00F992472F1FD0028D729 /* StackTest.swift in Sources */,
 				A0AF17C524324E1700C22177 /* EditAmount.swift in Sources */,
 				A0D78F18246F00620089B9A0 /* RGBullsEye.swift in Sources */,
 				A0D78F15246F00020089B9A0 /* Landmarks.swift in Sources */,
+				A0E00F9B2472F2330028D729 /* NestedStateView.swift in Sources */,
 				DBA3A21423BFE3D200962B66 /* main.swift in Sources */,
 				A0AF17C624324E1700C22177 /* EditTransaction.swift in Sources */,
 				DBA3A22823BFEE3600962B66 /* AllTransactionsView.swift in Sources */,
+				A0E00F9F2472F2990028D729 /* ThesisExample.swift in Sources */,
 				A0B05A5B23FC8D140047A5EE /* AllAccountsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

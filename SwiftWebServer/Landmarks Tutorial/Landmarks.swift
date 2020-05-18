@@ -33,4 +33,13 @@ struct Landmarks: View {
     }
 }
 
-
+struct CircleImage: View {
+    var body: some View {
+        Image("turtlerock.jpg")
+            .resizable()
+            .frame(width: 250, height: 250)
+            .cornerRadius(125)
+            .border(.white, width: 4)
+            .shadow(radius: 20)
+    }
+}
