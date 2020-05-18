@@ -20,4 +20,4 @@ jobs:
     - name: Check version
       run: swift --version
     - name: Build
-      run: xcodebuild
+      run: xcodebuild clean -project SwiftWebServer.xcodeproj -scheme SwiftWebServer | xcpretty
