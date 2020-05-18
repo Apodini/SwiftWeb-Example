@@ -20,6 +20,4 @@ jobs:
     - name: Check version
       run: swift --version
     - name: Build
-      run: swift build -v
-    - name: Test
-      run: swift test -v
+      run: xcodebuild
