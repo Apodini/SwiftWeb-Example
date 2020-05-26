@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftWeb
+import SwiftWebScript
 import Swifter
 
 class Server {

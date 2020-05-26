@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65B68623247D0CCE00892961 /* SwiftWebScript in Frameworks */ = {isa = PBXBuildFile; productRef = 65B68622247D0CCE00892961 /* SwiftWebScript */; };
 		A04A642A246EEB610017E1E5 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04A6429246EEB610017E1E5 /* Server.swift */; };
 		A04A642D246EEBEF0017E1E5 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = A04A642C246EEBEF0017E1E5 /* Swifter */; };
 		A0AF17C524324E1700C22177 /* EditAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF17C324324E1700C22177 /* EditAmount.swift */; };
@@ -77,6 +78,7 @@
 				A04A642D246EEBEF0017E1E5 /* Swifter in Frameworks */,
 				DBA3A21C23BFE3E700962B66 /* SwiftWeb in Frameworks */,
 				A0AF17C824324F3F00C22177 /* XpenseModel in Frameworks */,
+				65B68623247D0CCE00892961 /* SwiftWebScript in Frameworks */,
 				A0D78F11246EFEFD0089B9A0 /* SwiftWeb in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +212,7 @@
 				A0AF17C724324F3F00C22177 /* XpenseModel */,
 				A04A642C246EEBEF0017E1E5 /* Swifter */,
 				A0D78F10246EFEFD0089B9A0 /* SwiftWeb */,
+				65B68622247D0CCE00892961 /* SwiftWebScript */,
 			);
 			productName = SwiftWebServer;
 			productReference = DBA3A21023BFE3D200962B66 /* SwiftWebServer */;
@@ -397,7 +400,7 @@
 				CODE_SIGN_ENTITLEMENTS = SwiftWebServer/SwiftWebServer.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AUP6T9FX64;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -410,7 +413,7 @@
 				CODE_SIGN_ENTITLEMENTS = SwiftWebServer/SwiftWebServer.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AUP6T9FX64;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -453,13 +456,18 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Apodini/SwiftWeb.git";
 			requirement = {
-				branch = develop;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.8;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		65B68622247D0CCE00892961 /* SwiftWebScript */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0D78F0F246EFEFD0089B9A0 /* XCRemoteSwiftPackageReference "SwiftWeb" */;
+			productName = SwiftWebScript;
+		};
 		A04A642C246EEBEF0017E1E5 /* Swifter */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A04A642B246EEBEF0017E1E5 /* XCRemoteSwiftPackageReference "swifter" */;
