@@ -8,6 +8,8 @@ Package.resolved
 
 # Xcode User settings
 xcuserdata/
+build/
+*/build/
 
 # Other files
 .DS_Store

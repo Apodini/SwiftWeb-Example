@@ -16,6 +16,6 @@ jobs:
     - name: Check version
       run: swift --version
     - name: Build
-      run: swift build
+      run: xcodebuild -scheme SwiftWebServer -destination "platform=OS X"
     - name: Test
-      run: swift test
+      run: xcodebuild -scheme SwiftWebServer -destination "platform=OS X" test

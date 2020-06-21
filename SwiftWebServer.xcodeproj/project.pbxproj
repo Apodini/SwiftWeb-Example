@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		656BCA24249FF04F00BDDDDA /* SwiftWebServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BCA23249FF04F00BDDDDA /* SwiftWebServerTests.swift */; };
 		65B68623247D0CCE00892961 /* SwiftWebScript in Frameworks */ = {isa = PBXBuildFile; productRef = 65B68622247D0CCE00892961 /* SwiftWebScript */; };
 		A04A642A246EEB610017E1E5 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04A6429246EEB610017E1E5 /* Server.swift */; };
 		A04A642D246EEBEF0017E1E5 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = A04A642C246EEBEF0017E1E5 /* Swifter */; };
@@ -42,6 +43,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		656BCA21249FF04F00BDDDDA /* SwiftWebServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftWebServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		656BCA23249FF04F00BDDDDA /* SwiftWebServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWebServerTests.swift; sourceTree = "<group>"; };
+		656BCA25249FF04F00BDDDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A03EDCF023E1B63C0015FD14 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
 		A04A1C8E2463143C00E4B2EA /* quirin.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = quirin.jpeg; sourceTree = "<group>"; };
 		A04A6429246EEB610017E1E5 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
@@ -71,6 +75,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		656BCA1E249FF04F00BDDDDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DBA3A20D23BFE3D200962B66 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		656BCA22249FF04F00BDDDDA /* SwiftWebServerTests */ = {
+			isa = PBXGroup;
+			children = (
+				656BCA23249FF04F00BDDDDA /* SwiftWebServerTests.swift */,
+				656BCA25249FF04F00BDDDDA /* Info.plist */,
+			);
+			path = SwiftWebServerTests;
+			sourceTree = "<group>";
+		};
 		A0AF17C224324DE400C22177 /* EditTransaction */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +174,7 @@
 			children = (
 				A0AF17C024324D9B00C22177 /* XpenseModel */,
 				DBA3A21223BFE3D200962B66 /* SwiftWebServer */,
+				656BCA22249FF04F00BDDDDA /* SwiftWebServerTests */,
 				DBA3A21A23BFE3E700962B66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -162,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				DBA3A21023BFE3D200962B66 /* SwiftWebServer */,
+				656BCA21249FF04F00BDDDDA /* SwiftWebServerTests.xctest */,
 			);
 			name = Products;
 			path = ..;
@@ -194,6 +216,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		656BCA20249FF04F00BDDDDA /* SwiftWebServerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 656BCA26249FF05000BDDDDA /* Build configuration list for PBXNativeTarget "SwiftWebServerTests" */;
+			buildPhases = (
+				656BCA1D249FF04F00BDDDDA /* Sources */,
+				656BCA1E249FF04F00BDDDDA /* Frameworks */,
+				656BCA1F249FF04F00BDDDDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftWebServerTests;
+			productName = SwiftWebServerTests;
+			productReference = 656BCA21249FF04F00BDDDDA /* SwiftWebServerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DBA3A20F23BFE3D200962B66 /* SwiftWebServer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBA3A21723BFE3D200962B66 /* Build configuration list for PBXNativeTarget "SwiftWebServer" */;
@@ -224,10 +263,13 @@
 		DBA3A20823BFE3D200962B66 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Quirin Schweigert";
 				TargetAttributes = {
+					656BCA20249FF04F00BDDDDA = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					DBA3A20F23BFE3D200962B66 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -251,11 +293,30 @@
 			projectRoot = "";
 			targets = (
 				DBA3A20F23BFE3D200962B66 /* SwiftWebServer */,
+				656BCA20249FF04F00BDDDDA /* SwiftWebServerTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		656BCA1F249FF04F00BDDDDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		656BCA1D249FF04F00BDDDDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				656BCA24249FF04F00BDDDDA /* SwiftWebServerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DBA3A20C23BFE3D200962B66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,6 +342,42 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		656BCA27249FF05000BDDDDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2PA7Y2WTWF;
+				INFOPLIST_FILE = SwiftWebServerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.schmiedmayer.SwiftWebServerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		656BCA28249FF05000BDDDDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2PA7Y2WTWF;
+				INFOPLIST_FILE = SwiftWebServerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.schmiedmayer.SwiftWebServerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		DBA3A21523BFE3D200962B66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -423,6 +520,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		656BCA26249FF05000BDDDDA /* Build configuration list for PBXNativeTarget "SwiftWebServerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				656BCA27249FF05000BDDDDA /* Debug */,
+				656BCA28249FF05000BDDDDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DBA3A20B23BFE3D200962B66 /* Build configuration list for PBXProject "SwiftWebServer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
